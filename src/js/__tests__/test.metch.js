@@ -9,7 +9,7 @@ test('сортировка от большего к меньшему', () => {
   ]);
 });
 
-test('сортировка от большего к меньшему', () => {
+test('сортировка от большего к меньшему arrayHeroes', () => {
   const result = data(arrayHeroes);
   expect(result).not.toBe([
     { name: 'маг', health: 100 },

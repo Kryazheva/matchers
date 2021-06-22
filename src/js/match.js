@@ -5,7 +5,6 @@ export const arrayHeroes = [
   { name: 'лучник', health: 80 },
 ];
 
-
 export default function showHeroes(data) {
   return data.sort((a, b) => {
     if (b.health > a.health) {
