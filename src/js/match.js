@@ -7,7 +7,7 @@ export const arrayHeroes = [
 
 
 export default function showHeroes(data) {
-  data.sort((a, b) => {
+  return data.sort((a, b) => {
     if (b.health > a.health) {
       return 1;
     } if (b.health < a.health) {
@@ -18,4 +18,4 @@ export default function showHeroes(data) {
 }
 
 
-// console.log(asd);
+// console.log(showHeroes(arrayHeroes));
