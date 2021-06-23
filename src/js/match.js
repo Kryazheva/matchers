@@ -5,15 +5,18 @@ export const arrayHeroes = [
   { name: 'лучник', health: 80 },
 ];
 
+// export default function showHeroes(data) {
+//   return data.sort((a, b) => {
+//     if (b.health > a.health) {
+//       return 1;
+//     } if (b.health < a.health) {
+//       return -1;
+//     }
+//     return 0;
+//   });
+// }
 export default function showHeroes(data) {
-  return data.sort((a, b) => {
-    if (b.health > a.health) {
-      return 1;
-    } if (b.health < a.health) {
-      return -1;
-    }
-    return 0;
-  });
+  return data.sort((a, b) => b.health - a.health);
 }
 
 
